@@ -1,0 +1,55 @@
+extends layout 
+
+block contenido 
+    //-- Celulares --//
+    main.Tienda
+            .Contenedor.ContendorProductos
+                .Producto(data-id=`${Productos.id}`)
+                    .ImgProducto 
+                        a.OjoProducto(href=`/Tienda/${Productos.Imagen}`)
+                            i.fa.fa-eye
+                        a(href="")
+                            img.ImageProducto(src="/img/motrola-g9.png")
+                    .ContenidoProducto 
+                        p.ProductoNombre MotorolaG9
+                        p.PrecioProducto $
+                            span 8000
+                        button.Boton.BtnProductos(name='BtnAccion' type='submit' value='Agregar' href="#")
+                            span.span Agregar Al Carrito
+                .Producto(data-id=`${Productos.id}`)
+                    .ImgProducto 
+                        a.OjoProducto(href=`/Tienda/${Productos.Imagen}`)
+                            i.fa.fa-eye
+                        a(href="")
+                            img.ImagenProducto(src="/img/motrolalag22.png", alt="")
+                    .ContenidoProducto 
+                        p.ProductoNombre Motorola G22
+                        p.PrecioProducto $
+                            span 8000
+                        button.Boton.BtnProductos(name='BtnAccion' type='submit' value='Agregar' href="#")
+                            span.span Agregar Al Carrito
+                .Producto(data-id=`${Productos.id}`)
+                    .ImgProducto 
+                        a.OjoProducto(href=`/Tienda/${Productos.Imagen}`)
+                            i.fa.fa-eye
+                        a(href="")
+                            img.ImagenProducto(src="/img/samsungs20.png", alt="")
+                    .ContenidoProducto 
+                        p.ProductoNombre Samsung S20
+                        p.PrecioProducto $
+                            span 8000
+                        button.Boton.BtnProductos(name='BtnAccion' type='submit' value='Agregar' href="#")
+                            span.span Agregar Al Carrito
+    //-informacion
+    section.Seccion.Info
+        h2 Informacion importante 
+        .Contenedor.ContInfoTortas 
+            .InformacionDiv 
+                .Border 
+                    p Envios a todo el pais.
+            .InformacionDiv 
+                .Border 
+                    p Productos originales y de calidad.
+            .InformacionDiv 
+                .Border 
+                    p Aceptamos todos los medios de pago.

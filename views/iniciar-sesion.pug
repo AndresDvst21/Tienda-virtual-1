@@ -1,0 +1,20 @@
+extends layout
+
+block contenido
+    h2 Iniciar Sesión
+    .FormularioDiv
+        form(action="/iniciar-sesion" method="POST" class="FormDefault")
+            div.Campo
+                label(for="Email") Email:
+                input(type="email" name="Email" placeholder="Tu Email")
+            div.Campo
+                label(for="Contraseña") Contraseña:
+                input(type="password" name="Contraseña" placeholder="Tu Contraseña")
+            .campo.left
+                button.Boton
+                    span Iniciar Sesión
+            .Campos.Acciones
+                a(href="/crear-cuenta") ¿Aún no tienes cuenta?
+                a(href="/reestablecer") ¿Olvidaste tu Contraseña?
+
+

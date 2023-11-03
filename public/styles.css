@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+label{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+body{
+    background: #252323;
+    color: white;
+}
+
+.SubMenu{
+    opacity: 1;
+}
+
+/* Header */
+
+.Index{
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 45rem;
+    background-position: 0px 0px;
+}
+
+.ContenedorHeader{
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    background-color: gray;
+}
+
+/*Barra*/
+
+.barra{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barra h1{
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.MenuNavegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.MenuNavegacion .menuLink{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.liMenu{
+    padding: 0.5rem;
+}
+
+.titulo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 4rem auto;
+    width: 90%;
+    color: white;
+    line-height: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Sobre Nosotros */
+
+.seccionNosotros{
+    margin-top: 5rem;
+    position: relative;
+}
+
+.ImagenesNosotros{
+    margin-bottom: 9rem;
+}
+
+.img1{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.img2{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    top: 8rem;
+    left: 11rem;
+}
+
+.SobreNosotros h2{
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.SobreNosotros p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Celulares */
+.ContenidoProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Celulares h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ContendorProductos{
+    background-color: #252323;
+    padding: 2rem;
+}
+
+.ContendorProductos h3{
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid white;
+    border-radius: 1px;
+    padding-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ContendorProductos p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Producto{
+    margin: 2rem 0rem;
+    cursor: pointer;
+}
+
+/* Galeria */
+
+.Galeria{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.ContenedorImagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* Paralla */
+
+.ContenedorPatalla{
+    position: relative;
+    height: auto;
+}
+
+.ContenedorPatalla::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.ContenedorPatalla::before{
+    content: '';
+    background-image: url(./img/1.jpg);
+    background-attachment: fixed;
+}
+
+.BackgroundPantalla{
+    background-color: rgba(0, 0, 0, 0.563);
+    z-index: 1;
+    position: relative;
+}
+
+.ContenedorTexto{
+    position: relative;
+    text-align: center;
+}
+
+.ContenedorTexto h2{
+    font-size: 3rem;
+    line-height: 4rem;
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* infromacion */
+
+.InformacionDiv{
+    background-color: #252323;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    border-radius: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Info{
+    font-family: 'Oswald', sans-serif;
+}
+
+.Border{
+    border: 1px solid white;
+    margin: .5rem;
+    border-radius: 1rem;
+    width: 22.7rem;
+}
+
+.InformacionDiv p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Formulario */
+
+.FormularioDiv{
+    margin-bottom: 5rem;
+    background: #252323;
+}
+
+.FormDefault{
+    background-color: #021c46;
+    padding: 5rem 0rem;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 7px 31px 5px white;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+
+.Campo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem;
+    flex-direction: column;
+}
+
+.Campo input{
+    width: 80%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Campo label{
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+}
+
+.Acciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.Acciones a{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.left button{
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.ImgProducto {
+    position: relative;
+}
+
+.ImgProducto img {
+    width: 100%;
+    opacity: 1;
+    transition: filter 0.3s;
+}
+
+.OjoProducto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 24px;
+    transition: transform 0.3s, display 0.3s;
+    color: white;
+}
+
+.ImgProducto:hover img {
+    filter: blur(5px);
+}
+
+.ImgProducto:hover .OjoProducto {
+    display: block;
+    transform: scale(1.5); /* Ajusta el factor de escala según sea necesario */
+}
+
+.ContenidoProducto {
+    opacity: 1;
+    transition: filter 0.3s;
+}
+
+.ImgProducto:hover .ContenidoProducto {
+    filter: blur(5px);
+}
+
+.Boton {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.ImgProducto:hover .Boton {
+    filter: blur(5px);
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .ContenedorHeader {
+        justify-content: space-between;
+    }
+
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1,5rem;
+    }
+
+    .barra h1{
+        font-size: 4rem;
+    }
+
+    .BarraInicio{
+        background-color: rgba(0, 0, 0, 0.425);
+    }
+
+    .MenuNavegacion{
+        flex-direction: row;
+    }
+
+    .MenuNavegacion a{
+        margin-right: 50px;
+        transition: color 0.5s ease;
+    }
+
+    .MenuNavegacion a:hover{
+        color: black;
+    }
+
+    .titulo{
+        font-size: 5rem;
+        margin: 15rem 4rem;
+        width: 90%;
+        line-height: 5rem;
+    }
+
+    .ContenedorNosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+
+    .ImagenesNosotros:hover .img1{
+        border-radius: 5rem;
+        transform: scale(1.1);
+        transition: all 0.4 ease;
+    }
+
+    .img1{
+        width: 35rem;
+        transition: all 0.4s ease;
+    }
+
+    .img2{
+        width: 20rem;
+        height: 20rem;
+        top: 7rem;
+        left: 20rem;
+    }
+
+    .ContendorProductos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .Producto{
+        transition: all 1s ease;
+    }
+
+    .Producto:hover{
+        transform: scale(1.1);
+    }
+
+    .ContenedorImagenes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ImgGal{
+        height: 20rem;
+        width: 20rem;
+        transition: all 1s;
+    }
+
+    .ImgGal:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+
+    .ContenedorTexto h2{
+        font-size: 6rem;
+        line-height: 10rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .ContInfoTortas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;        
+    }
+
+    .InformacionDiv{
+        margin: .5rem 0rem;
+        align-items: center;
+    }
+
+    .FormDefault{
+        width: 50rem;
+    }
+
+    .Campo{
+        flex-direction: row;
+    }
+
+    .Campo input{
+        width: 33rem;
+        margin: 0rem 3rem;
+    }
+
+    .Boton{
+        text-transform: uppercase;
+        color: white;
+        background: none;
+        border: 3px solid white;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 1rem;
+    }
+
+    .Acciones a{
+        margin-bottom: 1rem;
+    }
+
+    .ContendorProductos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+
+    .ImagenCont .Imagen{
+        height: 32rem;
+        width: 32rem;
+        background: none;
+    }
+
+    .AgregarCarrito{
+        margin: 4rem;
+    }
+
+    .AgregarCarrito .Boton{
+        font-size: 3rem;
+    }
+
+    .TablaCarrito tr th{
+        width: 50rem;
+        font-size: 2rem;
+    }
+
+    .TablaCarrito tbody tr th{
+        font-size: 1.5rem;
+    }
+
+    .TablaCarrito .CartImg{
+        display: table-cell;
+    }
+
+    .BtnMovil{
+        display: none!important;
+    }
+
+    .CarBtn .Boton{
+        display: table-cell;
+    }
+
+    .TablaCarrito img{
+        width: 10rem;
+        height: 5rem;
+        text-align: center;
+    }
+
+    .SubToltalCar{
+        font-size: 2rem;
+        padding: 0rem 2rem;
+    }
+
+    .AccionesCarrito button{
+        font-size: 2rem;
+    }
+
+}
+
+.imgaen{
+    height: 22rem;
+    background: #b5b1b1;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.SliderImg{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.Imagen .show{
+    opacity: 1;
+}
+
+.InfromacionTarta .PrecioNombre .HombreTarta{
+    color: white;
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: -41px;
+    text-align: left;
+}
+
+.PrecioProducto{
+    color: white;
+    font-size: 4rem;
+}
+
+.PrecioProducto span{
+    font-size: 3,2rem;
+}
+
+.Cantidad{
+    margin-top: -30px;
+    display: flex;
+}
+
+.Cantidad label{
+    font-size: 2rem;
+}
+
+.AgregarCarrito{
+    text-align: center;
+}
+
+.InpuctCantidad{
+    margin: 0rem 1rem;
+}
+
+section.MiCeunta {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para el encabezado "Mi Cuenta" */
+section.MiCeunta h2 {
+    color: #333; /* Texto oscuro */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para las opciones "Mis Datos" y "Direcciones" */
+.OpcionCuenta {
+    display: flex; /* Mostrar las opciones en línea */
+    justify-content: space-between; /* Espacio uniforme entre las opciones */
+    align-items: center; /* Centrar verticalmente las opciones */
+    margin-top: 20px; /* Margen superior entre las opciones y el encabezado */
+}
+
+.OpcionCuenta .Icono i {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #666; /* Color del ícono gris oscuro */
+}
+
+.OpcionCuenta .Texto {
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilo para los enlaces de las opciones (si son enlaces) */
+.OpcionCuenta a {
+    text-decoration: none;
+}
+
+/* Estilo para el efecto de hover (opcional) */
+.OpcionCuenta:hover {
+    background-color: #f5f5f5; /* Cambio de color al pasar el mouse sobre las opciones */
+}
+
+
+.TablaCarrito{
+    border: 1px solid white;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.TablaCarrito{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.TablaCarrito tbody tr td{
+    padding-top: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td, th{
+    border: 1px solid white;
+}
+
+.TablaCarrito .CartImg{
+    display: none;
+    width: 40rem;
+    padding-left: 0.5rem;
+}
+
+.TablaCarrito .CartImg{
+    display: none;
+    width: 40rem;
+    padding-left: 0.5rem;
+}
+
+.TablaCarrito .CartCant{
+    width: 5rem;
+}
+
+.CartCant input{
+    width: 70%;
+}
+
+.CarBtn .Boton{
+    display: none;
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.DivBtonCar{
+    display: flex;
+}
+
+.CartCant .Boton{
+    padding: 0rem;
+    margin: 1rem;
+}
+
+.SubToltalCar{
+    font-size: 1rem;
+    padding: 0rem 1rem;
+}
+
+.AccionesCarrito{
+    display: flex;
+    justify-content: center;
+}
+
+.AccionesCarrito button{
+    font-size: 1rem;
+}

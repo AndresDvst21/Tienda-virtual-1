@@ -1,0 +1,38 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles.css")
+        link(rel="stylesheet", href="all.min.css")
+        title Tienda Virtual
+
+        header.header 
+        div(class=Pagina === 'Index' ? 'Index ContenedorHeader': '')
+            .barra.BarraInicio 
+                a(href="/") 
+                    h1 Tienda 
+                nav.MenuNavegacion 
+                    if locals.usuario && locals.usuario._doc && locals.usuario._doc._id
+                        include partials/nav-autenticado.pug
+                    else
+                        include partials/nav-noautenticado.pug
+            if (Pagina === 'Index')
+                h1.titulo Celulares Baratos
+        
+        if(locals.mensajes)
+            .Alertas
+                each Categoria, alertas in locals.mensajes
+                    each alerta in alertas
+                        .alerta(class=Categoria)
+                            p= alerta
+
+    body
+        block  contenido 
+
+
+
+    footer
+        p Todos los derechos reservados Andres Campos
+
+    script(src=("/dist/bundle.js"))

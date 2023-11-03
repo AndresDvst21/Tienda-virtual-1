@@ -1,0 +1,33 @@
+extends layout 
+
+block contenido 
+    //-- Celulares --//
+    main.Tienda
+        .Contenedor.ContendorProductos
+            if(Productos.length)
+                each Productos in Productos 
+                    .Producto(data-id=`${Productos.id}`) 
+                        .ImgProducto 
+                            a.OjoProducto(href=`/Tienda/${Productos.Imagen}`)  
+                                i.fa.fa-eye
+                            a(href="")
+                                img.ImageProducto(src=`/img/${Productos.Imagen}` alt=`${Productos.Imagen}`) 
+                        .ContenidoProducto 
+                            p.ProductoNombre= Productos.Titulo 
+                            p.PrecioProducto $
+                                span= Productos.Precio 
+                            button.Boton.BtnProductos(name='BtnAccion' type='submit' value='Agregar' href="#")
+                                span.span Agregar Al Carrito
+    //-informacion
+    section.Seccion.Info
+        h2 Informacion importante 
+        .Contenedor.ContInfoTortas 
+            .InformacionDiv 
+                .Border 
+                    p Envios a todo el pais.
+            .InformacionDiv 
+                .Border 
+                    p Productos originales y de calidad.
+            .InformacionDiv 
+                .Border 
+                    p Aceptamos todos los medios de pago.

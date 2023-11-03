@@ -1,0 +1,17 @@
+extends layout
+
+block contenido
+    section.MiCuenta 
+        h2 Mis Datos
+
+        form.default-form(method="POST")
+            .Campo  
+                label(for="Nombre") Nombre
+                input(type="text" name="Nombre" placeholder="Indica el Nombre" value=`${usuario.Nombre}`)
+            .Campo 
+                label(for="Email") Email
+                input(type="text" name="Email" placeholder="Indica el Email" value=`${usuario.Email}`)
+
+            .Campo.Left
+                button.Boton(name='BtnCrear' type='submit' value='Actualizar')
+                    span Actualizar Datos
